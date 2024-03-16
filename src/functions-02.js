@@ -100,7 +100,7 @@ const store = {
    */
   getStoreItems() {
     // write your code here & return value
-    const found = inventory.find((val) => val.items === items);
+    const found = inventory.map((val) => val.name);
     return found;
   },
   /**
