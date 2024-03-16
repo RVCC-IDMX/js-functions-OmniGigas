@@ -19,9 +19,7 @@
 function nameShuffle(str) {
   // write your code here & return value
   const cut = str.split(' ');
-  const reverseStr = cut.reverse();
-  const newStr = reverseStr.join(', ');
-  return newStr;
+  return `${cut[1]}, ${cut[0]}`;
 }
 
 /**
