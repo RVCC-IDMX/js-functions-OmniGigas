@@ -18,6 +18,10 @@
  */
 function nameShuffle(str) {
   // write your code here & return value
+  const cut = str.split(' ');
+  const reverseStr = cut.reverse();
+  const newStr = reverseStr.join(', ');
+  return newStr;
 }
 
 /**
@@ -48,6 +52,9 @@ function isStrangePair(str1, str2) {
  */
 function convertToDecimal(percent) {
   // write your code here & return value
+  const number = parseFloat(percent);
+  const floatNumber = number * 0.01;
+  return floatNumber;
 }
 
 /**
@@ -61,6 +68,18 @@ function convertToDecimal(percent) {
  */
 function checkSameSum(a1, a2) {
   // write your code here & return value
+  function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+      sum += arr[i];
+    }
+    return sum;
+  }
+
+  if (sumArray(a1) === sumArray(a2)) {
+    return true;
+  }
+  return false;
 }
 
 /**
